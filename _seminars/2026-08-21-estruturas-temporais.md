@@ -1,6 +1,6 @@
 ---
 title: "Estruturas temporais e novos problemas algorítmicos"
-event_date: "2025-12-31"
+event_date: "2026-01-01"
 date_label: "21 de agosto de 2026"
 day: "21"
 month_short: "AGO"
