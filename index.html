@@ -52,7 +52,6 @@ classes: wide
 <section class="sb-home-section" aria-labelledby="upcoming-title">
   <header class="sb-home-section__head">
     <div>
-      <p class="sb-kicker">Agenda</p>
       <h2 id="proximos-seminarios">Próximos seminários</h2>
     </div>
     <a href="{{ '/agenda/' | relative_url }}">Agenda completa →</a>
@@ -86,38 +85,9 @@ classes: wide
   </div>
 </section>
 
-<section class="sb-calendar" aria-labelledby="calendario">
-  <header class="sb-home-section__head">
-    <div>
-      <h2 id="calendar-title">Calendário</h2>
-    </div>
-    {% if site.google_calendar_subscribe_url and site.google_calendar_subscribe_url != "" %}
-      <a href="{{ site.google_calendar_subscribe_url }}">Adicionar ao Google Calendar →</a>
-    {% endif %}
-  </header>
-
-  {% if site.google_calendar_embed_url and site.google_calendar_embed_url != "" %}
-    <div class="sb-calendar__frame">
-      <iframe
-        src="{{ site.google_calendar_embed_url | escape }}"
-        title="Calendário dos Seminários Brasileiros de Teoria da Computação"
-        loading="lazy"
-        frameborder="0"
-        scrolling="no">
-      </iframe>
-    </div>
-  {% else %}
-    <div class="sb-calendar__empty">
-      O calendário será exibido aqui quando a URL pública for adicionada em
-      <code>_config.yml</code>.
-    </div>
-  {% endif %}
-</section>
-
 <section class="sb-home-section sb-home-section--archive" aria-labelledby="seminarios-anteriores">
   <header class="sb-home-section__head">
     <div>
-      <p class="sb-kicker">Arquivo</p>
       <h2 id="seminarios-anteriores">Seminários anteriores</h2>
     </div>
     <p>Slides e gravações aparecem quando estiverem disponíveis.</p>
@@ -156,6 +126,36 @@ classes: wide
     {% endif %}
   </div>
 </section>
+
+
+<section class="sb-calendar" aria-labelledby="calendario">
+  <header class="sb-home-section__head">
+    <div>
+      <h2 id="calendar-title">Calendário</h2>
+    </div>
+    {% if site.google_calendar_subscribe_url and site.google_calendar_subscribe_url != "" %}
+      <a href="{{ site.google_calendar_subscribe_url }}">Adicionar ao Google Calendar →</a>
+    {% endif %}
+  </header>
+
+  {% if site.google_calendar_embed_url and site.google_calendar_embed_url != "" %}
+    <div class="sb-calendar__frame">
+      <iframe
+        src="{{ site.google_calendar_embed_url | escape }}"
+        title="Calendário dos Seminários Brasileiros de Teoria da Computação"
+        loading="lazy"
+        frameborder="0"
+        scrolling="no">
+      </iframe>
+    </div>
+  {% else %}
+    <div class="sb-calendar__empty">
+      O calendário será exibido aqui quando a URL pública for adicionada em
+      <code>_config.yml</code>.
+    </div>
+  {% endif %}
+</section>
+
 
 <section class="sb-compact-cta">
   <div>

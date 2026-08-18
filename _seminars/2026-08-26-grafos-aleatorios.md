@@ -1,6 +1,6 @@
 ---
 title: "Grafos aleatórios: perguntas clássicas, novas fronteiras"
-event_date: "2026-08-26"
+event_date: "2025-08-26"
 date_label: "26 de agosto de 2026"
 day: "26"
 month_short: "AGO"
