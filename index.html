@@ -16,11 +16,11 @@ classes: wide
 {% endfor %}
 
 <section class="sb-intro">
-  <p class="sb-kicker">Agenda brasileira</p>
-  <h1>Seminários sobre algoritmos e Computação Teórica.</h1>
-  <p class="sb-intro__copy">
+  <!-- <p class="sb-kicker">Agenda brasileira</p> -->
+  <h1>Seminários Brasileiros de Teoria da Computação.</h1>
+  <!-- <p class="sb-intro__copy">
     Próximas palestras online e um arquivo aberto para a comunidade brasileira.
-  </p>
+  </p> -->
 </section>
 
 {% if next_event %}
@@ -53,7 +53,7 @@ classes: wide
   <header class="sb-home-section__head">
     <div>
       <p class="sb-kicker">Agenda</p>
-      <h2 id="upcoming-title">Próximos encontros</h2>
+      <h2 id="proximos-seminarios">Próximos seminários</h2>
     </div>
     <a href="{{ '/agenda/' | relative_url }}">Agenda completa →</a>
   </header>
@@ -86,11 +86,10 @@ classes: wide
   </div>
 </section>
 
-<section class="sb-calendar" aria-labelledby="calendar-title">
+<section class="sb-calendar" aria-labelledby="calendario">
   <header class="sb-home-section__head">
     <div>
-      <p class="sb-kicker">Calendário</p>
-      <h2 id="calendar-title">Acompanhe a agenda</h2>
+      <h2 id="calendar-title">Calendário</h2>
     </div>
     {% if site.google_calendar_subscribe_url and site.google_calendar_subscribe_url != "" %}
       <a href="{{ site.google_calendar_subscribe_url }}">Adicionar ao Google Calendar →</a>
@@ -101,7 +100,7 @@ classes: wide
     <div class="sb-calendar__frame">
       <iframe
         src="{{ site.google_calendar_embed_url | escape }}"
-        title="Calendário dos Seminários Brasil"
+        title="Calendário dos Seminários Brasileiros de Teoria da Computação"
         loading="lazy"
         frameborder="0"
         scrolling="no">
@@ -115,11 +114,11 @@ classes: wide
   {% endif %}
 </section>
 
-<section class="sb-home-section sb-home-section--archive" aria-labelledby="archive-title">
+<section class="sb-home-section sb-home-section--archive" aria-labelledby="seminarios-anteriores">
   <header class="sb-home-section__head">
     <div>
       <p class="sb-kicker">Arquivo</p>
-      <h2 id="archive-title">Seminários anteriores</h2>
+      <h2 id="seminarios-anteriores">Seminários anteriores</h2>
     </div>
     <p>Slides e gravações aparecem quando estiverem disponíveis.</p>
   </header>
@@ -160,11 +159,11 @@ classes: wide
 
 <section class="sb-compact-cta">
   <div>
-    <p class="sb-kicker">Colabore</p>
+    <p class="sb-kicker">Participe</p>
     <h2>Quer divulgar um seminário?</h2>
   </div>
   <p>
-    Envie data, resumo e link do seminário por e-mail.
+    Entre em contato via e-mail.
   </p>
-  <a href="mailto:seminariosbtc@gmail.com">Entrar em contato →</a>
+  <a href="mailto:seminariosbtc@gmail.com">seminariosbtc@gmail.com →</a>
 </section>

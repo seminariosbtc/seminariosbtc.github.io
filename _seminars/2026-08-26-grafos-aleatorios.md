@@ -10,7 +10,7 @@ topic_slug: "combinatoria"
 speaker: "Nome da pessoa convidada"
 affiliation: "Instituto de Matemática Exemplo"
 event_link:
-slides:
+slides: 
 recording:
 ---
 

@@ -12,9 +12,9 @@ excerpt: "Todos os seminários da agenda."
 {% assign today = "now" | date: "%Y%m%d" %}
 {% assign agenda = site.seminars | sort: "event_date" %}
 
-<section class="sb-agenda-section" aria-labelledby="agenda-upcoming">
+<section class="sb-agenda-section" aria-labelledby="proximos-seminarios">
   <p class="sb-kicker">Agenda</p>
-  <h2 id="agenda-upcoming">Próximos seminários</h2>
+  <h2 id="proximos-seminarios">Próximos seminários</h2>
 
   <div class="sb-event-list">
     {% assign upcoming_count = 0 %}
@@ -42,9 +42,9 @@ excerpt: "Todos os seminários da agenda."
   </div>
 </section>
 
-<section class="sb-agenda-section" aria-labelledby="agenda-past">
+<section class="sb-agenda-section" aria-labelledby="seminarios-anteriores">
   <p class="sb-kicker">Arquivo</p>
-  <h2 id="agenda-past">Seminários anteriores</h2>
+  <h2 id="seminarios-anteriores">Seminários anteriores</h2>
 
   <div class="sb-event-list">
     {% assign past_agenda = agenda | reverse %}

@@ -10,7 +10,7 @@ topic_slug: "algoritmos"
 speaker: "Nome da pessoa convidada"
 affiliation: "Universidade Exemplo"
 event_link:
-slides:
+slides: https://daviaic.github.io/cv.pdf
 recording:
 ---
 

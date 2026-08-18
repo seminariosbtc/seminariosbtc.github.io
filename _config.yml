@@ -1,9 +1,6 @@
-title: "Seminários Brasil"
+title: "Seminários Brasileiros de Teoria de Computação"
 title_separator: "·"
-subtitle: "Algoritmos e Computação Teórica"
-description: >-
-  Agenda brasileira de seminários sobre algoritmos, Computação Teórica
-  e áreas próximas.
+subtitle: "Algoritmos, Combinatória e Otimização"
 url: "https://seminariosbtc.github.io"
 baseurl: ""
 repository: "seminariosbtc/seminariosbtc.github.io"
@@ -22,10 +19,10 @@ breadcrumbs: true
 words_per_minute: 180
 future: true
 
-markdown: kramdown
-permalink: /caderno/:title/
-paginate: 6
-paginate_path: /pagina:num/
+# markdown: kramdown
+# permalink: /caderno/:title/
+# paginate: 6
+# paginate_path: /pagina:num/
 
 include:
   - _pages
