@@ -1,9 +1,0 @@
-main:
-  - title: "Início"
-    url: /
-  - title: "Agenda"
-    url: /agenda/
-  - title: "Envie um seminário"
-    url: /envie/
-  - title: "Sobre"
-    url: /sobre/

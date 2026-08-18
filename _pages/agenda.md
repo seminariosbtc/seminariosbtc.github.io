@@ -1,13 +1,13 @@
 ---
 title: "Agenda"
 permalink: /agenda/
-excerpt: "Próximos seminários, colóquios e encontros acadêmicos."
+excerpt: "Próximos seminários."
 ---
 
-<p class="sb-page-lead">
+<!-- <p class="sb-page-lead">
   Encontros presenciais, híbridos e online reunidos em uma única agenda.
   Nesta demonstração, os eventos são ilustrativos.
-</p>
+</p> -->
 
 <div class="sb-agenda-tools" role="group" aria-label="Filtrar eventos por área">
   <button class="sb-filter is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
