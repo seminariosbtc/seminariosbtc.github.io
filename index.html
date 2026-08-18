@@ -98,7 +98,7 @@ classes: wide
     {% assign past_shown = 0 %}
     {% for event in past_events %}
       {% assign event_day = event.event_date | date: "%Y%m%d" %}
-      {% if event_day < today and past_shown < 6 %}
+      {% if event_day < today and past_shown < 4 %}
         <article class="sb-archive__row">
           <time datetime="{{ event.event_date }}">{{ event.date_label }}</time>
           <div>
@@ -125,6 +125,7 @@ classes: wide
       <p class="sb-empty-line">O arquivo será preenchido após o primeiro seminário.</p>
     {% endif %}
   </div>
+    <a href="{{ '/agenda/' | relative_url }}">Todos seminários anteriores →</a>
 </section>
 
 
