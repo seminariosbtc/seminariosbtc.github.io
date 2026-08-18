@@ -1,6 +1,6 @@
 ---
 title: "Otimização robusta em redes sob incerteza"
-event_date: "2025-09-02"
+event_date: "2026-09-02"
 date_label: "2 de setembro de 2026"
 day: "02"
 month_short: "SET"

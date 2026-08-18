@@ -1,6 +1,6 @@
 ---
 title: "Aproximação algorítmica para problemas de cobertura"
-event_date: "2025-08-14"
+event_date: "2026-08-14"
 date_label: "14 de agosto de 2026"
 day: "14"
 month_short: "AGO"

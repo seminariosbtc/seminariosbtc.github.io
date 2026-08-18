@@ -1,6 +1,6 @@
 ---
 title: "Lógica finita e complexidade descritiva"
-event_date: "2025-08-28"
+event_date: "2026-08-28"
 date_label: "28 de agosto de 2026"
 day: "28"
 month_short: "AGO"

@@ -1,6 +1,6 @@
 ---
 title: "Colorações, decomposições e parâmetros estruturais"
-event_date: "2025-09-04"
+event_date: "2026-09-04"
 date_label: "4 de setembro de 2026"
 day: "04"
 month_short: "SET"
