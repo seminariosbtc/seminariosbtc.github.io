@@ -1,0 +1,152 @@
+---
+layout: splash
+permalink: /
+author_profile: false
+classes: wide
+---
+
+{% assign today = "now" | date: "%Y%m%d" %}
+{% assign ordered_events = site.seminars | sort: "event_date" %}
+{% for event in ordered_events %}
+  {% assign event_day = event.event_date | date: "%Y%m%d" %}
+  {% if event_day >= today %}
+    {% assign next_event = event %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<section class="sb-intro">
+  <p class="sb-kicker">Agenda brasileira</p>
+  <h1>Seminários sobre algoritmos e Computação Teórica.</h1>
+  <p class="sb-intro__copy">
+    Próximas palestras online e um arquivo aberto para a comunidade brasileira.
+  </p>
+</section>
+
+{% if next_event %}
+<section class="sb-next" aria-labelledby="next-seminar-title">
+  <div class="sb-next__label">Próximo seminário</div>
+  <div class="sb-next__date">
+    <span>{{ next_event.month_short }}</span>
+    <strong>{{ next_event.day }}</strong>
+    <small>{{ next_event.time }}</small>
+  </div>
+  <div class="sb-next__main">
+    <p>{{ next_event.topic }} · Online</p>
+    <h2 id="next-seminar-title">{{ next_event.title }}</h2>
+    <div class="sb-next__speaker">
+      <strong>{{ next_event.speaker }}</strong>
+      <span>{{ next_event.affiliation }}</span>
+    </div>
+  </div>
+  <div class="sb-next__where">
+    <span>{{ next_event.series }}</span>
+    <strong>Online</strong>
+    <a href="{{ next_event.url | relative_url }}">
+      Ver detalhes <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+{% else %}
+<section class="sb-empty-feature">
+  <p class="sb-kicker">Próximo seminário</p>
+  <h2>A nova data será anunciada em breve.</h2>
+</section>
+{% endif %}
+
+<section class="sb-home-section" aria-labelledby="upcoming-title">
+  <header class="sb-home-section__head">
+    <div>
+      <p class="sb-kicker">Agenda</p>
+      <h2 id="upcoming-title">Próximos encontros</h2>
+    </div>
+    <a href="{{ '/agenda/' | relative_url }}">Agenda completa →</a>
+  </header>
+
+  <div class="sb-simple-list">
+    {% assign upcoming_shown = 0 %}
+    {% for event in ordered_events %}
+      {% assign event_day = event.event_date | date: "%Y%m%d" %}
+      {% if event_day >= today %}
+        {% if event.url != next_event.url and upcoming_shown < 4 %}
+          <article class="sb-simple-event">
+            <div class="sb-simple-event__date">
+              <strong>{{ event.day }} {{ event.month_short }}</strong>
+              <span>{{ event.time }}</span>
+            </div>
+            <div class="sb-simple-event__main">
+              <span>{{ event.topic }} · Online</span>
+              <h3><a href="{{ event.url | relative_url }}">{{ event.title }}</a></h3>
+              <p>{{ event.speaker }} · {{ event.affiliation }}</p>
+            </div>
+            <div class="sb-simple-event__place">
+              <strong>{{ event.series }}</strong>
+              <span>Online</span>
+            </div>
+            <a class="sb-arrow" href="{{ event.url | relative_url }}" aria-label="Abrir {{ event.title }}">→</a>
+          </article>
+          {% assign upcoming_shown = upcoming_shown | plus: 1 %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if upcoming_shown == 0 %}
+      <p class="sb-empty-line">Nenhum outro encontro anunciado por enquanto.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="sb-home-section sb-home-section--archive" aria-labelledby="archive-title">
+  <header class="sb-home-section__head">
+    <div>
+      <p class="sb-kicker">Arquivo</p>
+      <h2 id="archive-title">Seminários anteriores</h2>
+    </div>
+    <p>Slides e gravações aparecem quando estiverem disponíveis.</p>
+  </header>
+
+  <div class="sb-archive">
+    {% assign past_events = ordered_events | reverse %}
+    {% assign past_shown = 0 %}
+    {% for event in past_events %}
+      {% assign event_day = event.event_date | date: "%Y%m%d" %}
+      {% if event_day < today and past_shown < 6 %}
+        <article class="sb-archive__row">
+          <time datetime="{{ event.event_date }}">{{ event.date_label }}</time>
+          <div>
+            <h3><a href="{{ event.url | relative_url }}">{{ event.title }}</a></h3>
+            <p>{{ event.speaker }} · {{ event.affiliation }}</p>
+          </div>
+          <span class="sb-archive__series">{{ event.series }}</span>
+          <div class="sb-archive__files">
+            {% if event.slides %}
+              <a href="{{ event.slides | relative_url }}">Apresentação ↓</a>
+            {% endif %}
+            {% if event.recording %}
+              <a href="{{ event.recording }}">Gravação ↗</a>
+            {% endif %}
+            {% unless event.slides or event.recording %}
+              <span>—</span>
+            {% endunless %}
+          </div>
+        </article>
+        {% assign past_shown = past_shown | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if past_shown == 0 %}
+      <p class="sb-empty-line">O arquivo será preenchido após o primeiro seminário.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="sb-compact-cta">
+  <div>
+    <p class="sb-kicker">Colabore</p>
+    <h2>Quer divulgar um seminário?</h2>
+  </div>
+  <p>
+    Envie data, resumo e link do seminário por e-mail.
+  </p>
+  <a href="mailto:seminariosbtc@gmail.com">Entrar em contato →</a>
+</section>
