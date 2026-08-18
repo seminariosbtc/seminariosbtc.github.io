@@ -1,0 +1,96 @@
+title: "Seminários Brasil"
+title_separator: "·"
+subtitle: "Algoritmos e Computação Teórica"
+description: >-
+  Agenda brasileira de seminários sobre algoritmos, Computação Teórica
+  e áreas próximas.
+url: "https://seminariosbtc.github.io"
+baseurl: ""
+repository: "seminariosbtc/seminariosbtc.github.io"
+locale: "pt-BR"
+timezone: "America/Sao_Paulo"
+
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"
+minimal_mistakes_skin: "air"
+search: true
+search_full_content: true
+breadcrumbs: true
+words_per_minute: 180
+future: true
+
+markdown: kramdown
+permalink: /caderno/:title/
+paginate: 6
+paginate_path: /pagina:num/
+
+include:
+  - _pages
+
+collections:
+  seminars:
+    output: true
+    permalink: /agenda/:path/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/seminariosbtc/seminariosbtc.github.io"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      show_date: true
+      share: false
+      related: true
+      classes: wide
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      classes: wide
+  - scope:
+      path: ""
+      type: seminars
+    values:
+      layout: seminar
+      author_profile: false
+      show_date: false
+      read_time: false
+      share: false
+      related: false
+      classes: "wide sb-seminar"
+
+category_archive:
+  type: liquid
+  path: /categorias/
+
+tag_archive:
+  type: liquid
+  path: /temas/
+
+exclude:
+  - GUIA-UPLOAD-GITHUB.md
+  - CV-INSTRUCOES.txt
+  - cv.pdf
+  - style.css
+  - script.js
+  - publications.html
+  - activities.html
+  - contact.html
+  - vendor
+  - README.md
