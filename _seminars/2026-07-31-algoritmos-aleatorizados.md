@@ -1,6 +1,6 @@
 ---
 title: "Algoritmos aleatorizados em grafos"
-event_date: "2026-07-31"
+event_date: "2025-07-31"
 date_label: "31 de julho de 2026"
 day: "31"
 month_short: "JUL"

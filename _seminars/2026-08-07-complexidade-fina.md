@@ -1,6 +1,6 @@
 ---
 title: "Limites inferiores e complexidade fina"
-event_date: "2026-08-07"
+event_date: "2025-08-07"
 date_label: "7 de agosto de 2026"
 day: "07"
 month_short: "AGO"
