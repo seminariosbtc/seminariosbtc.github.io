@@ -1,9 +1,0 @@
-main:
-  - title: "Início"
-    url: /
-  - title: "Agenda"
-    url: /agenda/
-  - title: "Contato"
-    url: /contato/
-  - title: "Sobre"
-    url: /sobre/
