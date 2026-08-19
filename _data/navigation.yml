@@ -3,5 +3,5 @@ main:
     url: /
   - title: "Agenda"
     url: /agenda/
-      - title: "Quem somos"
-    url: /sobre/
+  - title: "Quem somos"
+    url: /quem-somos/
