@@ -1,24 +1,29 @@
-- name:
-  institution:
-  email:
-  photo:
+- name: Beatriz Martins
+  institution: École Normale Supérieure de Lyon
+  email: beatriz.martins@ens-lyon.fr
+  photo: 
+  profile_url: "https://pagina-da-pessoa.com"
 
-- name:
-  institution:
-  email:
-  photo:
+- name: Davi de Andrade
+  institution: Gran Sasso Science Institute
+  email: davi.deandradeiacono@gssi.it
+  photo: 
+  profile_url: "https://pagina-da-pessoa.com"
 
-- name:
-  institution:
-  email:
-  photo:
+- name: Emanuel Castelo
+  institution: Aix-Marseille Université
+  email: emanuel.castelo@lis-lab.fr
+  photo: 
+  profile_url: "https://pagina-da-pessoa.com"
 
-- name:
-  institution:
-  email:
+- name: Kennedy Corrêa
+  institution: Universidade de São Paulo
+  email: 
   photo:
+  profile_url: "https://pagina-da-pessoa.com"
 
-- name:
-  institution:
-  email:
+- name: Leonardo de Abreu
+  institution: Université de Montpellier
+  email: 
   photo:
+  profile_url: "https://pagina-da-pessoa.com"
