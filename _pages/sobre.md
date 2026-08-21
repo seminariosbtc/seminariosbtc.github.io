@@ -9,9 +9,7 @@ excerpt: "Conheça as pessoas que mantêm a agenda."
   <h2 id="about-project-title">Sobre nós</h2>
 
   <p>
-    Substitua este texto por uma apresentação do grupo, explicando quem vocês
-    são, por que criaram a agenda e como pretendem contribuir para a comunidade
-    de Algoritmos e Computação Teórica.
+    O projeto dos Seminários Brasileiros de Teoria da Computação é uma iniciativa de estudantes de doutorado brasileiros para incentivar a colaboração entre pesquisadores de diferentes áreas e grupos de Teoria da Computação no Brasil. Temos como principal motivação garantir que os estudantes de pós-graduação tenham acesso a diferentes tópicos, grupos de pesquisa, e outros pesquisadores, uma vez que a participação em eventos presenciais encontra obstáculos financeiros dada a grandeza territorial do país e no número de eventos locais da área.
   </p>
 </section>
 
