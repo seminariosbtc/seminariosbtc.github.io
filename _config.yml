@@ -15,7 +15,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.28.1"
 minimal_mistakes_skin: "air"
 search: true
 search_full_content: true
-breadcrumbs: true
+breadcrumbs: false
 words_per_minute: 180
 future: true
 
