@@ -1,6 +1,6 @@
 title: "Seminários Brasileiros de Teoria de Computação"
 title_separator: "·"
-subtitle: "Algoritmos, Combinatória e Otimização"
+subtitle: ""
 url: "https://seminariosbtc.github.io"
 baseurl: ""
 repository: "seminariosbtc/seminariosbtc.github.io"
@@ -8,14 +8,16 @@ locale: "pt-BR"
 timezone: "America/Sao_Paulo"
 
 # Cole aqui as URLs fornecidas em Google Calendar → Integrar agenda.
-google_calendar_embed_url: "https://calendar.google.com/calendar/embed?src=seminariosbtc%40gmail.com&ctz=Europe%2FParis"
-google_calendar_subscribe_url: "https://calendar.google.com/calendar/u/3?cid=c2VtaW5hcmlvc2J0Y0BnbWFpbC5jb20"
+
+google_calendar_embed_url: "https://calendar.google.com/calendar/embed?src=seminariosbtc%40gmail.com&ctz=America%2FSao_Paulo"
+google_calendar_subscribe_url: "https://calendar.google.com/calendar/u/0?cid=c2VtaW5hcmlvc2J0Y0BnbWFpbC5jb20"
+
 
 remote_theme: "mmistakes/minimal-mistakes@4.28.1"
 minimal_mistakes_skin: "air"
 search: true
 search_full_content: true
-breadcrumbs: true
+breadcrumbs: false
 words_per_minute: 180
 future: true
 
@@ -40,10 +42,10 @@ plugins:
   - jekyll-remote-theme
 
 footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/seminariosbtc/seminariosbtc.github.io"
+  # links:
+  #   - label: "GitHub"
+  #     icon: "fab fa-fw fa-github"
+  #     url: "https://github.com/seminariosbtc/seminariosbtc.github.io"
 
 defaults:
   - scope:

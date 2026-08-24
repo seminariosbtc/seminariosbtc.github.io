@@ -1,0 +1,29 @@
+- name: Beatriz Martins
+  institution: École Normale Supérieure de Lyon
+  email: beatriz.martins@ens-lyon.fr
+  photo: "https://ab-martins.github.io/assets/pfp.jpeg"
+  profile_url: "https://ab-martins.github.io/"
+
+- name: Davi de Andrade
+  institution: Gran Sasso Science Institute
+  email: davi.deandradeiacono@gssi.it
+  photo: "https://daviaic.github.io/assets/img/photo.JPG"
+  profile_url: "https://daviaic.github.io/"
+
+- name: Emanuel Castelo
+  institution: Aix-Marseille Université
+  email: emanuel.castelo@lis-lab.fr
+  photo: "https://elvcastelo.github.io/assets/profile_picture.gif"
+  profile_url: "https://elvcastelo.github.io/"
+
+- name: Kennedy Corrêa
+  institution: Universidade de São Paulo
+  email: 
+  photo:
+  profile_url: "https://seminariosbtc.github.io/quem-somos/"
+
+- name: Leonardo de Abreu
+  institution: Université de Montpellier
+  email: leonardo.cavalcante-de-abreu@lirmm.fr
+  photo:
+  profile_url: "https://seminariosbtc.github.io/quem-somos/"

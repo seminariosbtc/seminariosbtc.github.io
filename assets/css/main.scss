@@ -70,7 +70,7 @@ a {
   align-items: center;
   border: 1px solid $ink;
   color: $ink;
-  content: "SB";
+  content: "SBTC";
   display: inline-flex;
   font-family: "Crimson Pro", serif;
   font-size: 0.7rem;
@@ -729,6 +729,91 @@ body.sb-seminar .pagination {
   color: $muted;
 }
 
+.sb-about-copy {
+  border-bottom: 1px solid $line;
+  margin-bottom: 4.5rem;
+  max-width: 850px;
+  padding-bottom: 3.5rem;
+}
+
+.sb-about-copy h2,
+.sb-team-section > h2 {
+  color: $ink;
+  font-size: clamp(2.5rem, 4.5vw, 4.2rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 0 0 1.5rem;
+}
+
+.sb-about-copy > p:last-child {
+  color: #34383d;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+  max-width: 760px;
+}
+
+.sb-team-section {
+  margin-bottom: 4rem;
+}
+
+.sb-team-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 2.5rem;
+}
+
+.sb-person {
+  border-top: 1px solid $ink;
+  min-width: 0;
+  padding-top: 0.8rem;
+}
+
+.sb-person__photo {
+  align-items: center;
+  aspect-ratio: 1;
+  background: $blue-soft;
+  color: $muted;
+  display: flex;
+  font-size: 0.62rem;
+  justify-content: center;
+  letter-spacing: 0.08em;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.sb-person__photo img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.sb-person h3 {
+  color: $ink;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 1rem 0 0.35rem;
+}
+
+.sb-person p {
+  color: $muted;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  margin: 0 0 0.8rem;
+  min-height: 2.1em;
+}
+
+.sb-person a,
+.sb-person__email {
+  color: $blue;
+  display: block;
+  font-size: 0.65rem;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 900px) {
   .sb-next {
     grid-template-columns: 44px 105px 1fr;
@@ -749,6 +834,10 @@ body.sb-seminar .pagination {
   .sb-compact-cta > a {
     grid-column: 1 / -1;
     justify-self: start;
+  }
+
+  .sb-team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -836,9 +925,29 @@ body.sb-seminar .pagination {
     height: 480px;
   }
 
+  .sb-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sb-date {
     height: 60px;
     width: 54px;
+  }
+}
+
+.sb-person a.sb-person__name-link {
+  color: $ink;
+  display: inline;
+  font-size: inherit;
+}
+
+.sb-person a.sb-person__name-link:hover {
+  color: $blue;
+}
+
+@media (max-width: 430px) {
+  .sb-team-grid {
+    grid-template-columns: 1fr;
   }
 }
 
