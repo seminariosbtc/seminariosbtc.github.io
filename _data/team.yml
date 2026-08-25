@@ -19,11 +19,11 @@
 - name: Kennedy Corrêa
   institution: Universidade de São Paulo
   email: kennedycorrea19@gmail.com
-  photo:
+  photo: "assets/img/equipe/kcorrea.jpeg"
   profile_url: "https://seminariosbtc.github.io/quem-somos/"
 
 - name: Leonardo de Abreu
   institution: Université de Montpellier
   email: leonardo.cavalcante-de-abreu@lirmm.fr
-  photo:
+  photo: "https://levonhart.github.io/assets/img/profile.jpeg"
   profile_url: "https://seminariosbtc.github.io/quem-somos/"
