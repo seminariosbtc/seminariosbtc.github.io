@@ -32,7 +32,7 @@ classes: wide
     <small>{{ next_event.time }}</small>
   </div>
   <div class="sb-next__main">
-    <h2 id="next-seminar-title">{{ next_event.title }}</h2>
+    <h2 id="next-seminar-title"><a href="{{ next_event.url | relative_url }}">{{ next_event.title }}</a></h2>
     <div class="sb-next__speaker">
       <strong>{{ next_event.speaker }}</strong>
       <span>{{ next_event.affiliation }}</span>
