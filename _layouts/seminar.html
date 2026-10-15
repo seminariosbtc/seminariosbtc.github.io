@@ -23,14 +23,11 @@ layout: single
     <div>
       <span>Link do seminário</span>
       {% if page.event_link %}
-        <strong>Clique aqui</strong>
+        <a href="{{ page.event_link }}">Acessar link ↗</a>
       {% else %}
         <strong>TBA</strong>
       {% endif %}
     </div>
-    {% if page.event_link %}
-      <a href="{{ page.event_link }}">Acessar link ↗</a>
-    {% endif %}
   </div>
 
   <section class="sb-seminar-section" aria-labelledby="abstract-title">
