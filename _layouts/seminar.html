@@ -25,7 +25,7 @@ layout: single
       {% if page.event_link %}
         <a href="{{ page.event_link }}">Acessar link</a>
       {% else %}
-        <strong>TBA</strong>
+        <strong>Não disponível</strong>
       {% endif %}
     </div>
   </div>
@@ -46,9 +46,9 @@ layout: single
       <div class="sb-file{% unless page.slides %} is-empty{% endunless %}">
         <span>Apresentação</span>
         {% if page.slides %}
-          <a href="{{ page.slides | relative_url }}">Baixar arquivo ↓</a>
+          <a href="{{ page.slides | relative_url }}">Baixar arquivo</a>
         {% else %}
-          <strong>Ainda não disponível</strong>
+          <strong>Não disponível</strong>
         {% endif %}
       </div>
       <div class="sb-file{% unless page.recording %} is-empty{% endunless %}">
@@ -56,7 +56,7 @@ layout: single
         {% if page.recording %}
           <a href="{{ page.recording }}">Assistir gravação ↗</a>
         {% else %}
-          <strong>Ainda não disponível</strong>
+          <strong>Não disponível</strong>
         {% endif %}
       </div>
     </div>
