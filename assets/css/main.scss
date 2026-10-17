@@ -95,7 +95,7 @@ a {
 }
 
 .masthead {
-  background: rgba(255, 255, 255, 0.96);
+  // background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid $line;
 }
 
@@ -173,17 +173,17 @@ a {
     font-size: 1rem;
   }
 
-  &__footer {
-    background: $white;
-    border-top: 1px solid $line;
-    color: $muted;
-    margin-top: 5rem;
-  }
+  // &__footer {
+  //   background: $white;
+  //   border-top: 1px solid $line;
+  //   color: $muted;
+  //   margin-top: 5rem;
+  // }
 
-  &__footer-follow,
-  &__footer-copyright {
-    font-size: 0.68rem;
-  }
+  // &__footer-follow,
+  // &__footer-copyright {
+  //   font-size: 0.68rem;
+  // }
 }
 
 #next-seminar-title a,
@@ -212,6 +212,10 @@ a {
     letter-spacing: -0.05em;
     line-height: 0.9;
     margin: 0 0 2rem;
+  }
+
+  p {
+    font-size: 15pt;
   }
 
   &__copy {
